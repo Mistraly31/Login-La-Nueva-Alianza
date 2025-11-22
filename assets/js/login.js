@@ -1,7 +1,7 @@
 // Usuarios: username => sha256 hash de la contraseña
 // hash generado con cualquier generador online de SHA-256
 const accounts = {
-    "Usuario1": "2c0f5b28f87f287c8fbd5f1b5c4eb354f4e8a5d0cd9fc2e3b7a9f1c05a61cba5" // hash de "Contraseña1"
+    "Usuario1": "99a52df3ff3d499488e2fa28150c4106a2cb5e928891a830a9aa3922b2d32160" // hash de "Contraseña1"
 };
 
 // Función para convertir input a hash (SHA-256)
