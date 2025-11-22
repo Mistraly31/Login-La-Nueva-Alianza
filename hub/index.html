@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Índice — La Nueva Alianza</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/login.js" defer></script>
+  <script> // Protección: desde /hub/ la ruta a fail.html es ../fail.html
+    document.addEventListener('DOMContentLoaded', function(){ requireLogin('../fail.html'); });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title center">Selecciona un archivo</h1>
+
+      <div class="title-list">
+        <a class="link" href="../texts/t1.html">Título 1</a>
+        <a class="link" href="../texts/t2.html">Título 2</a>
+        <a class="link" href="../texts/t3.html">Título 3</a>
+      </div>
+
+      <div class="center">
+        <!-- Cerrar sesión: estamos en /hub/, volvemos al index root -->
+        <a class="link logout" href="../index.html" onclick="sessionStorage.clear()">Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
