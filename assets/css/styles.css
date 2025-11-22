@@ -1,26 +1,71 @@
-/* assets/css/style.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-:root{
-  --bg: #000;
-  --text: #fff;
-  --muted: #bdbdbd;
-  --font-size: 11px;
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:Roboto, Arial, sans-serif;font-size:var(--font-size)}
-.container{width:100%;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
 
-.card{width:100%;max-width:640px;padding:18px;background:transparent;border:0;color:var(--text)}
-.title{margin:0 0 12px 0;font-weight:300;font-size:14px;text-align:center}
-.input{width:100%;max-width:320px;padding:8px 10px;margin:8px 0;background:#0b0b0b;border:1px solid #222;color:var(--text);font-size:var(--font-size);border-radius:4px}
-.btn{width:100%;max-width:320px;padding:9px 12px;margin-top:6px;background:#111;color:var(--text);border:1px solid #222;cursor:pointer;font-size:var(--font-size);border-radius:4px}
-.btn:hover{background:#1a1a1a}
-.link{color:var(--text);text-decoration:none;font-size:var(--font-size)}
-.link:hover{text-decoration:underline}
-.title-list{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
-.text-block{margin:10px 0;line-height:1.35;white-space:pre-wrap}
-.center{width:100%;text-align:center}
-.small{font-size:10px;color:var(--muted);margin-top:8px}
-.logout{margin-top:12px;display:inline-block}
+input {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    padding: 8px;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px;
+    margin-top: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #222;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.title-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.text-block {
+    text-align: left;
+    line-height: 1.35;
+    margin-top: 15px;
+    white-space: pre-wrap;
+}
