@@ -1,0 +1,68 @@
+:root{
+  --bg: #000;
+  --panel: #000;
+  --input: #0b0b0b;
+  --border: #222;
+  --text: #fff;
+  --muted: #bdbdbd;
+  --font-size: 11px;
+}
+
+/* Reset mínimo */
+*{box-sizing:border-box}
+html,body,#app{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:Roboto, Arial, sans-serif;font-size:var(--font-size)}
+.app-root{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}
+
+.card{
+  width:100%;
+  max-width:360px;
+  padding:18px;
+  background:var(--panel);
+  border:1px solid #0f0f0f;
+  box-shadow:0 8px 24px rgba(255,255,255,0.02);
+  border-radius:6px;
+}
+
+/* Titles and text */
+.title{margin:0 0 12px 0;font-weight:300;font-size:14px;text-align:center}
+.hint{display:block;margin-top:8px;color:var(--muted);text-align:center}
+
+/* Inputs */
+.input{
+  width:100%;
+  padding:8px 10px;
+  margin:8px 0;
+  background:var(--input);
+  border:1px solid var(--border);
+  color:var(--text);
+  font-size:var(--font-size);
+  border-radius:4px;
+}
+
+/* Buttons */
+.btn{
+  width:100%;
+  padding:9px 12px;
+  margin-top:6px;
+  background:#111;
+  color:var(--text);
+  border:1px solid #222;
+  cursor:pointer;
+  font-size:var(--font-size);
+  border-radius:4px;
+}
+.btn:hover{background:#1a1a1a}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);margin-top:12px}
+
+/* Texts area */
+.texts{margin-top:8px}
+.texts p{margin:10px 0;padding:0;line-height:1.25;}
+
+/* Screens visibility */
+.screen{width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.screen-hidden{display:none}
+.screen-visible{display:flex}
+
+/* Accessibility helpers */
+.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+.center{text-align:center}
