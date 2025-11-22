@@ -4,7 +4,7 @@
 */
 
 const accounts = {
-  "Usuario1": "Contraseña1"
+  "User": "Test"
   // "Shadow": "Clave123",
   // "Admin": "Secreto"
 };
