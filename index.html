@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — La Nueva Alianza</title>
+
+  <!-- Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main id="app" class="app-root">
+
+    <!-- LOGIN -->
+    <section id="screen-login" class="screen screen-visible" aria-label="Pantalla de login">
+      <div class="card">
+        <h1 class="title">Iniciar sesión</h1>
+
+        <label class="sr-only" for="input-user">Usuario</label>
+        <input id="input-user" class="input" type="text" placeholder="Usuario" autocomplete="off" />
+
+        <label class="sr-only" for="input-pass">Contraseña</label>
+        <input id="input-pass" class="input" type="password" placeholder="Contraseña" autocomplete="off" />
+
+        <button id="btn-login" class="btn">Iniciar sesión</button>
+        <small id="hint" class="hint">Usuario y contraseña controlados por <code>data/users.json</code></small>
+      </div>
+    </section>
+
+    <!-- FAILED -->
+    <section id="screen-failed" class="screen screen-hidden" aria-hidden="true">
+      <div class="card center">
+        <h2>Login failed</h2>
+        <button id="btn-back" class="btn btn-ghost">Volver</button>
+      </div>
+    </section>
+
+    <!-- MAIN (textos) -->
+    <section id="screen-main" class="screen screen-hidden" aria-hidden="true">
+      <div class="card">
+        <h1 class="title">Zona de Texto</h1>
+        <div id="texts-container" class="texts"></div>
+        <button id="btn-logout" class="btn btn-ghost">Cerrar sesión</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
