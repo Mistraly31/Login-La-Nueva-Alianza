@@ -5,8 +5,8 @@
 
 const accounts = {
   "User": "Test"
-  // "Shadow": "Clave123",
-  // "Admin": "Secreto"
+  // "A": "Clave123",
+  // "B": "Secreto"
 };
 
 // Iniciar sesión (llamado desde index.html)
